@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { CharacterCard } from "../component/charactersCard";
+import PropTypes from "prop-types";
+import { CharactersCard } from "../component/charactersCard";
 
 import "../../styles/home.scss";
 
@@ -8,7 +9,7 @@ export const Home = () => {
 	const [planets, setPlanets] = useState([]);
 	const [vehicles, setVehicles] = useState([]);
 	useEffect(() => {
-		fetch("http://swapi.dev/api/people/") //API for People
+		fetch("https://swapi.dev/api/people/") //API for People
 			.then(function(response) {
 				if (!response.ok) {
 					throw Error(response.statusText);
@@ -25,7 +26,7 @@ export const Home = () => {
 			});
 
 		//Planet Hooks
-		fetch("http://swapi.dev/api/planets/") //API for Planets
+		fetch("https://swapi.dev/api/planets/") //API for Planets
 			.then(function(response) {
 				if (!response.ok) {
 					throw Error(response.statusText);
@@ -42,7 +43,7 @@ export const Home = () => {
 			});
 
 		//Vehicles Hooks
-		fetch("http://swapi.dev/api/vehicles/") //API for Vehicles
+		fetch("https://swapi.dev/api/vehicles/") //API for Vehicles
 			.then(function(response) {
 				if (!response.ok) {
 					throw Error(response.statusText);
@@ -60,20 +61,14 @@ export const Home = () => {
 	}, []);
 
 	return (
-		<div className="card mb-5">
-			<img
-				className="card-img-top"
-				src="https://www.gaithersburgdental.com/wp-content/uploads/2016/10/orionthemes-placeholder-image.png"
-				alt="Card image cap"
-			/>
-
-			<div className="card-body">
-				<h5 className="card-title" />
-				<p className="card-text" />
-				<a href="#" className="btn btn-primary">
-					Read More
-				</a>
+		<div className="container-fluid">
+			<div className="characters">
+				<h1>Character</h1>
+				{characters.map((character, index) => {
+					return <CharactersCard character={character} key={index} />;
+				})}
 			</div>
+			<p />
 		</div>
 	);
 };

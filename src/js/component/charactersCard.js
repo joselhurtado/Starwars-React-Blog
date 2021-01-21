@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 //characterCards
-export function CharactersCards(props) {
+export function CharactersCard(props) {
 	return (
 		<div className="card mb-5">
 			<img
@@ -11,13 +11,32 @@ export function CharactersCards(props) {
 				alt="Card image cap"
 			/>
 
-			<div className="card-body">
-				<h5 className="card-title" />
-				<p className="card-text" />
-				<a href="#" className="btn btn-primary">
-					Read More
-				</a>
-			</div>
+			{props.character.name ? (
+				<div className="card-body">
+					<h5 className="card-title">{props.character.name}</h5> <br />
+					<p className="card-text">
+						Hair Color
+						{props.character.hair_color} <br />
+						Height
+						{props.character.height} <br />
+						Birth Year
+						{props.character.birth_year} <br />
+						Skin Color
+						{props.character.skin_color} <br />
+						Eye Color
+						{props.character.eye_color} <br />
+					</p>
+					<a href="#" className="btn btn-primary">
+						Read More
+					</a>
+				</div>
+			) : (
+				"DATA LOADING..."
+			)}
 		</div>
 	);
 }
+
+CharactersCard.propTypes = {
+	character: PropTypes.object
+};
