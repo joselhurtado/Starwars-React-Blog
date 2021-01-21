@@ -12,8 +12,8 @@ export function CharactersCards(props) {
 			/>
 
 			<div className="card-body">
-				<h5 className="card-title"></h5>
-				<p className="card-text"></p>
+				<h5 className="card-title" />
+				<p className="card-text" />
 				<a href="#" className="btn btn-primary">
 					Read More
 				</a>
