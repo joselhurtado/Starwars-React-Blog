@@ -22,7 +22,7 @@ export function VehiclesCard(props) {
 						{props.vehicle.uid} <br />
 					</p>
 					<a href="#" className="btn btn-warning">
-						Read More
+						Discover More More
 					</a>
 				</div>
 			) : (

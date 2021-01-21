@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import { CharactersCard } from "../component/charactersCard";
 import { PlanetsCard } from "../component/planetsCard";
+import { VehiclesCard } from "../component/vehiclesCard";
 
 import "../../styles/home.scss";
 
@@ -71,9 +72,16 @@ export const Home = () => {
 			</div>
 			<br />
 			<h1 className="col">Planets</h1>
-			<div className="cplanets d-flex overflow-auto">
+			<div className="planets d-flex overflow-auto">
 				{planets.map((planet, index) => {
 					return <PlanetsCard planet={planet} key={index} />;
+				})}
+			</div>
+			<br />
+			<h1 className="col">Vehicles</h1>
+			<div className="vehicles d-flex overflow-auto">
+				{vehicles.map((vehicle, index) => {
+					return <VehiclesCard vehicle={vehicle} key={index} />;
 				})}
 			</div>
 		</div>

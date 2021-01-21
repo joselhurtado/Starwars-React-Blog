@@ -31,7 +31,7 @@ export function CharactersCard(props) {
 						{props.character.gender} <br />
 					</p>
 					<a href="#" className="btn btn-warning">
-						Read More
+						Learn More
 					</a>
 				</div>
 			) : (

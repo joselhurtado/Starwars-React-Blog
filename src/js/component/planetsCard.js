@@ -22,7 +22,7 @@ export function PlanetsCard(props) {
 						{props.planet.uid} <br />
 					</p>
 					<a href="#" className="btn btn-warning">
-						Read More
+						Explore More
 					</a>
 				</div>
 			) : (
