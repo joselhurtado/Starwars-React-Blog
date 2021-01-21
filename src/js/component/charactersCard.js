@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 //characterCards
 export function CharactersCard(props) {
 	return (
-		<div className="col-3">
+		<div className="col-3 mb-2">
 			<img
 				className="card-img-top"
 				src="https://starwarsblog.starwars.com/wp-content/uploads/2019/08/rise-of-skywalker-poster-tall.jpg"
@@ -15,7 +15,7 @@ export function CharactersCard(props) {
 
 			{props.character.name ? (
 				<div className="card-body">
-					<h5 className="card-title">{props.character.name}</h5> <br />
+					<h5 className="card-title">{props.character.name}</h5>
 					<p className="card-text">
 						Hair Color: {props.character.hair_color} <br />
 						Height: {props.character.height} <br />

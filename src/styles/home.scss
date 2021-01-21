@@ -1,27 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Days+One&display=swap');
 
-  @media (max-width: 576px) {  
-  .xs {color:red;font-weight:bold;}
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  background: #252525; 
 }
 
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width:768px) {  
-  .sm {color:red;font-weight:bold;}
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
 }
  
-/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media (min-width: 768px) and (max-width:992px) {  
- .md {color:red;font-weight:bold;}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ffc107; 
+  border-radius: 10px;
 }
- 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width:1200px) { 
- .lg {color:red;font-weight:bold;}
-}
- 
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {  
-    .xl {color:red;font-weight:bold;}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ffc107; 
 }
 
 .navbar {
@@ -55,7 +54,9 @@ h1 {
 }
 
 .card-title {
-    color: #fff;
+    font-size: 1.5em;
+    color: #ffc107;
+    font-family: 'Days One', sans-serif;
 }
 
 .card-text {
