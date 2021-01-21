@@ -62,13 +62,12 @@ export const Home = () => {
 
 	return (
 		<div className="container-fluid">
-			<div className="characters">
-				<h1>Character</h1>
+			<h1 className="col">Characters</h1>
+			<div className="characters d-flex overflow-auto">
 				{characters.map((character, index) => {
 					return <CharactersCard character={character} key={index} />;
 				})}
 			</div>
-			<p />
 		</div>
 	);
 };

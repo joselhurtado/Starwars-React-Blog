@@ -4,29 +4,27 @@ import PropTypes from "prop-types";
 //characterCards
 export function CharactersCard(props) {
 	return (
-		<div className="card mb-5">
+		<div className="col-3">
 			<img
 				className="card-img-top"
-				src="https://www.gaithersburgdental.com/wp-content/uploads/2016/10/orionthemes-placeholder-image.png"
+				src="https://starwarsblog.starwars.com/wp-content/uploads/2019/08/rise-of-skywalker-poster-tall.jpg"
 				alt="Card image cap"
+				width="100px"
+				height="auto"
 			/>
 
 			{props.character.name ? (
 				<div className="card-body">
 					<h5 className="card-title">{props.character.name}</h5> <br />
 					<p className="card-text">
-						Hair Color
-						{props.character.hair_color} <br />
-						Height
-						{props.character.height} <br />
-						Birth Year
-						{props.character.birth_year} <br />
-						Skin Color
-						{props.character.skin_color} <br />
-						Eye Color
-						{props.character.eye_color} <br />
+						Hair Color: {props.character.hair_color} <br />
+						Height: {props.character.height} <br />
+						Birth Year: {props.character.birth_year} <br />
+						Skin Color: {props.character.skin_color} <br />
+						Eye Color: {props.character.eye_color} <br />
+						Gender: {props.character.gender} <br />
 					</p>
-					<a href="#" className="btn btn-primary">
+					<a href="#" className="btn btn-warning">
 						Read More
 					</a>
 				</div>

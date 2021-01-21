@@ -1,7 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Days+One&display=swap');
+
+  @media (max-width: 576px) {  
+  .xs {color:red;font-weight:bold;}
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width:768px) {  
+  .sm {color:red;font-weight:bold;}
+}
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) and (max-width:992px) {  
+ .md {color:red;font-weight:bold;}
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width:1200px) { 
+ .lg {color:red;font-weight:bold;}
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+    .xl {color:red;font-weight:bold;}
+}
+
 .navbar {
-    background-color: #000 !important;
+    background-color: #252525 !important;
 }
 
 body {
-    background-color: #252525;
+    background-image: url("https://wallpapercave.com/wp/pEeUsp1.jpg");
+    background-color: #000;
+}
+
+h1 {
+    margin-top: 50px;
+    color: #ffc107;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Days One', sans-serif;
+}
+
+.overflow-auto {
+    overflow: auto;
+}
+
+.card {
+    background-color: #000 !important;
+}
+
+.card-body {
+    background-color: #252525 !important;
+}
+
+.card-title {
+    color: #fff;
+}
+
+.card-text {
+    color: #fff;
 }
