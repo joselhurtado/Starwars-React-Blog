@@ -2,7 +2,7 @@
 
 /* width */
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 10px;
   background: #252525; 
 }
 
@@ -60,5 +60,9 @@ h1 {
 }
 
 .card-text {
+    color: #fff;
+}
+
+.footer-text {
     color: #fff;
 }

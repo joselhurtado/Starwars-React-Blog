@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import { CharactersCard } from "../component/charactersCard";
+import { PlanetsCard } from "../component/planetsCard";
 
 import "../../styles/home.scss";
 
@@ -66,6 +67,13 @@ export const Home = () => {
 			<div className="characters d-flex overflow-auto">
 				{characters.map((character, index) => {
 					return <CharactersCard character={character} key={index} />;
+				})}
+			</div>
+			<br />
+			<h1 className="col">Planets</h1>
+			<div className="cplanets d-flex overflow-auto">
+				{planets.map((planet, index) => {
+					return <PlanetsCard planet={planet} key={index} />;
 				})}
 			</div>
 		</div>

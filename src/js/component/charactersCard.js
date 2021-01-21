@@ -7,7 +7,7 @@ export function CharactersCard(props) {
 		<div className="col-3 mb-2">
 			<img
 				className="card-img-top"
-				src="https://starwarsblog.starwars.com/wp-content/uploads/2019/08/rise-of-skywalker-poster-tall.jpg"
+				src="https://www.geekgirlauthority.com/wp-content/uploads/2018/05/7773769005_star-wars.jpg"
 				alt="Card image cap"
 				width="100px"
 				height="auto"
@@ -17,12 +17,18 @@ export function CharactersCard(props) {
 				<div className="card-body">
 					<h5 className="card-title">{props.character.name}</h5>
 					<p className="card-text">
-						Hair Color: {props.character.hair_color} <br />
-						Height: {props.character.height} <br />
-						Birth Year: {props.character.birth_year} <br />
-						Skin Color: {props.character.skin_color} <br />
-						Eye Color: {props.character.eye_color} <br />
-						Gender: {props.character.gender} <br />
+						Hair Color: {""}
+						{props.character.hair_color} <br />
+						Height: {""}
+						{props.character.height} <br />
+						Birth Year: {""}
+						{props.character.birth_year} <br />
+						Skin Color: {""}
+						{props.character.skin_color} <br />
+						Eye Color: {""}
+						{props.character.eye_color} <br />
+						Gender: {""}
+						{props.character.gender} <br />
 					</p>
 					<a href="#" className="btn btn-warning">
 						Read More
