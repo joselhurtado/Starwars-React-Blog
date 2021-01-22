@@ -24,6 +24,7 @@ export function PlanetsCard(props) {
 					<a href="#" className="btn btn-warning">
 						Explore More
 					</a>
+					<a href="#" className="btn btn-outline-warning float-right fa fa-heart" />
 				</div>
 			) : (
 				"DATA LOADING..."

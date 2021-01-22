@@ -71,6 +71,7 @@ export const Home = () => {
 				})}
 			</div>
 			<br />
+			<br />
 			<h1 className="col">Planets</h1>
 			<div className="planets d-flex overflow-auto">
 				{planets.map((planet, index) => {
@@ -78,12 +79,14 @@ export const Home = () => {
 				})}
 			</div>
 			<br />
+			<br />
 			<h1 className="col">Vehicles</h1>
 			<div className="vehicles d-flex overflow-auto">
 				{vehicles.map((vehicle, index) => {
 					return <VehiclesCard vehicle={vehicle} key={index} />;
 				})}
 			</div>
+			<br />
 		</div>
 	);
 };

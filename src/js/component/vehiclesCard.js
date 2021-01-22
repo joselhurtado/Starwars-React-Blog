@@ -22,8 +22,9 @@ export function VehiclesCard(props) {
 						{props.vehicle.uid} <br />
 					</p>
 					<a href="#" className="btn btn-warning">
-						Discover More More
+						Discover More
 					</a>
+					<a href="#" className="btn btn-outline-warning float-right fa fa-heart" />
 				</div>
 			) : (
 				"DATA LOADING..."
