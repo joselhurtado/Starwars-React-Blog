@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 //characterCards
 export function CharactersCard(props) {
 	return (
-		<div className="card m-2" style={{ minWidth: "15rem" }}>
+		<div className="card m-2" style={{ minWidth: "18rem" }}>
 			<img
 				className="card-img-top"
 				src="https://www.geekgirlauthority.com/wp-content/uploads/2018/05/7773769005_star-wars.jpg"

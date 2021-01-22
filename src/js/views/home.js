@@ -63,7 +63,7 @@ export const Home = () => {
 	}, []);
 
 	return (
-		<div className="container-fluid">
+		<div className="container-md" style={{ minWidth: "75%", margin: "25px", padding: "10px" }}>
 			<h1 className="col">Characters</h1>
 			<div className="characters d-flex overflow-auto">
 				{characters.map((character, index) => {

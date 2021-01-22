@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 //vehicleCards
 export function VehiclesCard(props) {
 	return (
-		<div className="card m-2" style={{ minWidth: "15rem" }}>
+		<div className="card m-2" style={{ minWidth: "18rem" }}>
 			<img
 				className="card-img-top"
 				src="https://www.teamvvv.com/wp-content/uploads/2016/12/rogue_one_vr_mission.jpg"

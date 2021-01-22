@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 //planetCards
 export function PlanetsCard(props) {
 	return (
-		<div className="card m-2" style={{ minWidth: "15rem" }}>
+		<div className="card m-2" style={{ minWidth: "18rem" }}>
 			<img
 				className="card-img-top"
 				src="https://starwarsblog.starwars.com/wp-content/uploads/2018/10/mustafar-tall.jpg"
