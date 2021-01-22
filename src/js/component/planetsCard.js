@@ -14,20 +14,20 @@ export function PlanetsCard(props) {
 			/>
 
 			{props.planet.name ? (
-				<div className="card-body">
+				<div className="card-body justify-content-between">
 					<h5 className="card-title">{props.planet.name}</h5>
 					<p className="card-text">
-						Rotation Period: {""}
+						<strong>Rotation Period:</strong> {""}
 						{props.planet.rotation_period} <br />
-						Orbital Period: {""}
+						<strong>Orbital Period:</strong> {""}
 						{props.planet.orbital_period} <br />
-						Diameter: {""}
+						<strong>Diameter:</strong> {""}
 						{props.planet.diameter} <br />
-						Climate: {""}
+						<strong>Climate:</strong> {""}
 						{props.planet.climate} <br />
-						Gravity: {""}
+						<strong>Gravity:</strong> {""}
 						{props.planet.gravity} <br />
-						Terrain: {""}
+						<strong>Terrain:</strong> {""}
 						{props.planet.terrain} <br />
 					</p>
 					<a href="#" className="btn btn-warning">

@@ -17,20 +17,20 @@ export function CharactersCard(props) {
 				<div className="card-body justify-content-between">
 					<h5 className="card-title">{props.character.name}</h5>
 					<p className="card-text">
-						Hair Color: {""}
+						<strong>Hair Color:</strong> {""}
 						{props.character.hair_color} <br />
-						Height: {""}
+						<strong>Height:</strong> {""}
 						{props.character.height} <br />
-						Birth Year: {""}
+						<strong>Birth Year:</strong> {""}
 						{props.character.birth_year} <br />
-						Skin Color: {""}
+						<strong>Skin Color:</strong> {""}
 						{props.character.skin_color} <br />
-						Eye Color: {""}
+						<strong>Eye Color:</strong> {""}
 						{props.character.eye_color} <br />
-						Gender: {""}
+						<strong>Gender:</strong> {""}
 						{props.character.gender} <br />
 					</p>
-					<a href="#" className="btn btn-warning ">
+					<a id="bottom" href="#" className="btn btn-warning ">
 						Learn More
 					</a>
 					<a href="#" className="btn btn-outline-warning float-right fa fa-heart" />

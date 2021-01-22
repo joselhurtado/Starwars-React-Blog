@@ -14,20 +14,20 @@ export function VehiclesCard(props) {
 			/>
 
 			{props.vehicle.name ? (
-				<div className="card-body">
+				<div className="card-body justify-content-between">
 					<h5 className="card-title">{props.vehicle.name}</h5>
 					<p className="card-text">
-						Model: {""}
+						<strong>Model:</strong> {""}
 						{props.vehicle.model} <br />
-						Manufacturer: {""}
+						<strong>Manufacturer:</strong> {""}
 						{props.vehicle.manufacturer} <br />
-						Length: {""}
+						<strong>Length:</strong> {""}
 						{props.vehicle.length} <br />
-						Crew: {""}
+						<strong>Crew:</strong> {""}
 						{props.vehicle.crew} <br />
-						Passengers: {""}
+						<strong>Passengers:</strong> {""}
 						{props.vehicle.passengers} <br />
-						Cargo Capacity: {""}
+						<strong>Cargo Capacity:</strong> {""}
 						{props.vehicle.cargo_capacity} <br />
 					</p>
 					<a href="#" className="btn btn-warning">

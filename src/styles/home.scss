@@ -40,7 +40,7 @@ h1 {
     text-transform: uppercase;
     text-align: center;
     font-family: 'Days One', sans-serif;
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 
 .overflow-auto {
@@ -56,13 +56,14 @@ h1 {
 }
 
 .card-title {
-    font-size: 1.5em;
+    font-size: 1.3em;
     color: #ffc107;
     font-family: 'Days One', sans-serif;
 }
 
 .card-text {
     color: #fff;
+    text-transform: capitalize;
 }
 
 .footer-text {

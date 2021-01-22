@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 export const Navbar = () => {
 	return (
-		<nav className="navbar navbar-dark bg-dark" collapseOnSelect>
-			<div className="container-fluid" id="responsive-navbar-nav">
+		<nav className="navbar navbar-dark bg-dark">
+			<div className="container-fluid">
 				<Link to="/">
 					<span className="navbar-brand mb-0 h1">
 						<img
