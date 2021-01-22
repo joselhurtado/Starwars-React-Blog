@@ -17,9 +17,18 @@ export function VehiclesCard(props) {
 				<div className="card-body">
 					<h5 className="card-title">{props.vehicle.name}</h5>
 					<p className="card-text">
-						UID:
-						{""}
-						{props.vehicle.uid} <br />
+						Model: {""}
+						{props.vehicle.model} <br />
+						Manufacturer: {""}
+						{props.vehicle.manufacturer} <br />
+						Length: {""}
+						{props.vehicle.length} <br />
+						Crew: {""}
+						{props.vehicle.crew} <br />
+						Passengers: {""}
+						{props.vehicle.passengers} <br />
+						Cargo Capacity: {""}
+						{props.vehicle.cargo_capacity} <br />
 					</p>
 					<a href="#" className="btn btn-warning">
 						Discover More

@@ -45,7 +45,7 @@ export const Home = () => {
 			});
 
 		//Vehicles Hooks
-		fetch("https://swapi.dev/api/vehicles/") //API for Vehicles
+		fetch("https://swapi.dev/api/starships/") //API for Vehicles
 			.then(function(response) {
 				if (!response.ok) {
 					throw Error(response.statusText);

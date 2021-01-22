@@ -17,9 +17,18 @@ export function PlanetsCard(props) {
 				<div className="card-body">
 					<h5 className="card-title">{props.planet.name}</h5>
 					<p className="card-text">
-						UID:
-						{""}
-						{props.planet.uid} <br />
+						Rotation Period: {""}
+						{props.planet.rotation_period} <br />
+						Orbital Period: {""}
+						{props.planet.orbital_period} <br />
+						Diameter: {""}
+						{props.planet.diameter} <br />
+						Climate: {""}
+						{props.planet.climate} <br />
+						Gravity: {""}
+						{props.planet.gravity} <br />
+						Terrain: {""}
+						{props.planet.terrain} <br />
 					</p>
 					<a href="#" className="btn btn-warning">
 						Explore More
