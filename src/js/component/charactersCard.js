@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 //characterCards
 export function CharactersCard(props) {
 	return (
-		<div className="col-3 mb-2">
+		<div className="card m-2" style={{ minWidth: "15rem" }}>
 			<img
 				className="card-img-top"
 				src="https://www.geekgirlauthority.com/wp-content/uploads/2018/05/7773769005_star-wars.jpg"
@@ -14,7 +14,7 @@ export function CharactersCard(props) {
 			/>
 
 			{props.character.name ? (
-				<div className="card-body">
+				<div className="card-body justify-content-between">
 					<h5 className="card-title">{props.character.name}</h5>
 					<p className="card-text">
 						Hair Color: {""}
