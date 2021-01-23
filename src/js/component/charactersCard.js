@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 //characterCards
-export function CharactersCard(props) {
+export function CharacterCard(props) {
 	return (
 		<div className="card m-2" style={{ minWidth: "18rem" }}>
 			<img
@@ -42,6 +42,6 @@ export function CharactersCard(props) {
 	);
 }
 
-CharactersCard.propTypes = {
+CharacterCard.propTypes = {
 	character: PropTypes.object
 };

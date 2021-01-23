@@ -1,89 +1,37 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import PropTypes from "prop-types";
-import { CharactersCard } from "../component/charactersCard";
-import { PlanetsCard } from "../component/planetsCard";
-import { VehiclesCard } from "../component/vehiclesCard";
+import { CharacterCard } from "../component/charactersCard";
+import { PlanetCard } from "../component/planetsCard";
+import { VehicleCard } from "../component/vehiclesCard";
+import { Context } from "../store/appContext";
 
 import "../../styles/home.scss";
 
 export const Home = () => {
-	const [characters, setCharacters] = useState([]); //Hooks for characters
-	const [planets, setPlanets] = useState([]);
-	const [vehicles, setVehicles] = useState([]);
-	useEffect(() => {
-		fetch("https://swapi.dev/api/people/") //API for People
-			.then(function(response) {
-				if (!response.ok) {
-					throw Error(response.statusText);
-				}
-				// Read the response as json
-				return response.json();
-			})
-			.then(function(responseAsJson) {
-				// Do stuff with the JSON for People
-				setCharacters(responseAsJson.results);
-			})
-			.catch(function(error) {
-				console.log("Looks like there was a problem: \n", error);
-			});
-
-		//Planet Hooks
-		fetch("https://swapi.dev/api/planets/") //API for Planets
-			.then(function(response) {
-				if (!response.ok) {
-					throw Error(response.statusText);
-				}
-				// Read the response as json.
-				return response.json();
-			})
-			.then(function(responseAsJson) {
-				// Do stuff with the JSON for Planets
-				setPlanets(responseAsJson.results);
-			})
-			.catch(function(error) {
-				console.log("Looks like there was a problem: \n", error);
-			});
-
-		//Vehicles Hooks
-		fetch("https://swapi.dev/api/starships/") //API for Vehicles
-			.then(function(response) {
-				if (!response.ok) {
-					throw Error(response.statusText);
-				}
-				// Read the response as json.
-				return response.json();
-			})
-			.then(function(responseAsJson) {
-				// Do stuff with the JSON for Vehicles
-				setVehicles(responseAsJson.results);
-			})
-			.catch(function(error) {
-				console.log("Looks like there was a problem: \n", error);
-			});
-	}, []);
+	const { store, actions } = useContext(Context);
 
 	return (
 		<div className="container-md" style={{ minWidth: "75%", margin: "25px", padding: "10px" }}>
 			<h1 className="col">Characters</h1>
-			<div className="characters d-flex overflow-auto">
-				{characters.map((character, index) => {
-					return <CharactersCard character={character} key={index} />;
+			<div className="character d-flex overflow-auto">
+				{store.character.map((character, index) => {
+					return <CharacterCard character={character} key={index} />;
 				})}
 			</div>
 			<br />
 			<br />
 			<h1 className="col">Planets</h1>
-			<div className="planets d-flex overflow-auto">
-				{planets.map((planet, index) => {
-					return <PlanetsCard planet={planet} key={index} />;
+			<div className="planet d-flex overflow-auto">
+				{store.planet.map((planet, index) => {
+					return <PlanetCard planet={planet} key={index} />;
 				})}
 			</div>
 			<br />
 			<br />
 			<h1 className="col">Vehicles</h1>
-			<div className="vehicles d-flex overflow-auto">
-				{vehicles.map((vehicle, index) => {
-					return <VehiclesCard vehicle={vehicle} key={index} />;
+			<div className="vehicle d-flex overflow-auto">
+				{store.vehicle.map((vehicle, index) => {
+					return <VehicleCard vehicle={vehicle} key={index} />;
 				})}
 			</div>
 			<br />

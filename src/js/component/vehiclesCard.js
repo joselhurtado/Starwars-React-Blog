@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 //vehicleCards
-export function VehiclesCard(props) {
+export function VehicleCard(props) {
 	return (
 		<div className="card m-2" style={{ minWidth: "18rem" }}>
 			<img
@@ -42,6 +42,6 @@ export function VehiclesCard(props) {
 	);
 }
 
-VehiclesCard.propTypes = {
+VehicleCard.propTypes = {
 	vehicle: PropTypes.object
 };
