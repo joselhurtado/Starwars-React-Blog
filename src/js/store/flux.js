@@ -19,9 +19,12 @@ const getState = ({ getStore, getActions, setStore }) => {
 			]
 		},
 		actions: {
-			// Use getActions to call a function within a fuction
-			exampleFunction: () => {
-				getActions().changeColor(0, "green");
+			addFavorite: newItem => {
+				var storeCopy = getStore(); // Copy of the Store
+
+				var newFavorites = storeCopy.favorites.concat(newItem);
+
+				setStore({ favorites: newFavorites }); //New chamges values of the Store
 			},
 			loadSomeData: () => {
 				/** fetch().then().then(data => setStore({ "foo": data.bar }))*/

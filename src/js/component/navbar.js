@@ -15,7 +15,6 @@ export const Navbar = () => {
 					</span>
 				</Link>
 				<form className="d-flex">
-					<input className="form-control m-2" type="search" placeholder="Search" aria-label="Search" />
 					<Link to="/demo">
 						<button className="btn btn-warning m-2">Favorites</button>
 					</Link>
