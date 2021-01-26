@@ -5,10 +5,11 @@ import { Context } from "../store/appContext";
 
 export const Single = props => {
 	const { store, actions } = useContext(Context);
-	const params = useParams();
+	const { theid } = useParams();
+	console.log(store.character[theid]);
 	return (
-		<div className="jumbotron">
-			<h1 className="display-4">This will show the demo element: {store.demo[params.theid].title}</h1>
+		<div className="container">
+			<h1 className="card">{theid}</h1>
 
 			<hr className="my-4" />
 

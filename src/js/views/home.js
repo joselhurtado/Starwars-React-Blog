@@ -15,7 +15,7 @@ export const Home = () => {
 			<h1 className="col">Characters</h1>
 			<div className="character d-flex overflow-auto">
 				{store.character.map((character, index) => {
-					return <CharacterCard character={character} key={index} />;
+					return <CharacterCard character={character} key={index} index={index} />;
 				})}
 			</div>
 			<br />
@@ -23,7 +23,7 @@ export const Home = () => {
 			<h1 className="col">Planets</h1>
 			<div className="planet d-flex overflow-auto">
 				{store.planet.map((planet, index) => {
-					return <PlanetCard planet={planet} key={index} />;
+					return <PlanetCard planet={planet} key={index} index={index} />;
 				})}
 			</div>
 			<br />
@@ -31,7 +31,7 @@ export const Home = () => {
 			<h1 className="col">Vehicles</h1>
 			<div className="vehicle d-flex overflow-auto">
 				{store.vehicle.map((vehicle, index) => {
-					return <VehicleCard vehicle={vehicle} key={index} />;
+					return <VehicleCard vehicle={vehicle} key={index} index={index} />;
 				})}
 			</div>
 			<br />

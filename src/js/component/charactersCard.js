@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 //characterCards
 export function CharacterCard(props) {
@@ -30,9 +31,9 @@ export function CharacterCard(props) {
 						<strong>Gender:</strong> {""}
 						{props.character.gender} <br />
 					</p>
-					<a id="bottom" href="#" className="btn btn-warning ">
+					<Link to={"/single/" + props.index} id="bottom" className="btn btn-warning ">
 						Learn More
-					</a>
+					</Link>
 					<a href="#" className="btn btn-outline-warning float-right fa fa-heart" />
 				</div>
 			) : (
@@ -44,4 +45,8 @@ export function CharacterCard(props) {
 
 CharacterCard.propTypes = {
 	character: PropTypes.object
+};
+
+CharacterCard.propTypes = {
+	index: PropTypes.number
 };
