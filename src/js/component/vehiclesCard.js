@@ -1,17 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
+import vehiclesSw from "../../img/Vehicles_SW.jpg";
 
 //vehicleCards
 export function VehicleCard(props) {
 	return (
 		<div className="card m-2" style={{ minWidth: "18rem" }}>
-			<img
-				className="card-img-top"
-				src="https://www.teamvvv.com/wp-content/uploads/2016/12/rogue_one_vr_mission.jpg"
-				alt="Card image cap"
-				width="100px"
-				height="auto"
-			/>
+			<img className="card-img-top" src={vehiclesSw} alt="Card image cap" width="100px" height="auto" />
 
 			{props.vehicle.name ? (
 				<div className="card-body justify-content-between">

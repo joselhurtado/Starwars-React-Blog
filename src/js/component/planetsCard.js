@@ -1,17 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
+import planetsSw from "../../img/Planets_SW.jpg";
 
 //planetCards
 export function PlanetCard(props) {
 	return (
 		<div className="card m-2" style={{ minWidth: "18rem" }}>
-			<img
-				className="card-img-top"
-				src="https://starwarsblog.starwars.com/wp-content/uploads/2018/10/mustafar-tall.jpg"
-				alt="Card image cap"
-				width="100px"
-				height="auto"
-			/>
+			<img className="card-img-top" src={planetsSw} alt="Card image cap" width="100px" height="auto" />
 
 			{props.planet.name ? (
 				<div className="card-body justify-content-between">

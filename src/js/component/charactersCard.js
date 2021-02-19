@@ -1,18 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import characterSw from "../../img/Characters_SW.jpg";
 
 //characterCards
 export function CharacterCard(props) {
 	return (
 		<div className="card m-2" style={{ minWidth: "18rem" }}>
-			<img
-				className="card-img-top"
-				src="https://www.geekgirlauthority.com/wp-content/uploads/2018/05/7773769005_star-wars.jpg"
-				alt="Card image cap"
-				width="100px"
-				height="auto"
-			/>
+			<img className="card-img-top" src={characterSw} alt="Card image cap" width="100px" height="auto" />
 
 			{props.character.name ? (
 				<div className="card-body justify-content-between">
